@@ -13,7 +13,7 @@ const postTips = async (req, res) => {
 const getTips = async (req, res) => {
     try {
         const Tips = await tipsModel.find();
-        console.log(Tips);
+        // console.log(Tips);
         res.status(200).send(Tips)
     } catch (error) {
         res.status(500).send({message : "Internal Server error"})

@@ -13,7 +13,7 @@ const postResources = async (req, res) => {
 const getResources = async (req, res) => {
     try {
         const resources = await resourceModel.find();
-        console.log(resources);
+        // console.log(resources);
         res.status(200).send(resources)
     } catch (error) {
         res.status(500).send({message : "Internal Server error"})
