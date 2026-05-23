@@ -1,5 +1,5 @@
 const express = require('express');
-const {postData, getData} = require('../controllers/footprint.controller.js');
+const {postData, getData} = require('../Controllers/footprint.controller.js');
 const validiateToken = require('../Middlewares/validiateToken.middleware.js');
 
 const router = express.Router();
