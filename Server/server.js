@@ -10,10 +10,10 @@ dotenv.config();
 connectionDB();
 app.use(express.json());
 
-app.use(cors({
+app.use(({
     origin: [
         "http://localhost:5173",
-        "https://green-living-seven.vercel.app/"  // frontend deploy 
+        "https://green-living-seven.vercel.app"  // frontend deploy 
     ],
     credentials: true,
 }))
