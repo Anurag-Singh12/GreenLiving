@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import App from './routes/App.jsx'
 import Tips from './routes/Tips.jsx';
 import Header from './components/Header.jsx';
-import CarbonFP from './routes/CarbonFP.jsx';
+import CarbonFP from './routes/CarbonFp.jsx';
 import UserProfile from './routes/UserProfile.jsx';
 import {
   createBrowserRouter,
