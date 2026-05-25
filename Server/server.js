@@ -18,6 +18,10 @@ app.use(cors({
     credentials: true,
 }))
 
+app.get("/", (req, res) => {
+    res.send("GreenLiving Server is live" + port)
+})
+
 app.use("/tips", require('./Routes/Tips.route.js'));
 app.use("/resources", require('./Routes/Resource.route.js'))
 app.use("/users", require('./Routes/User.route.js'));
